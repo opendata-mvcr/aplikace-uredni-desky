@@ -178,7 +178,8 @@
         countElement.innerText = createCounterText(limit, content.length);
 
         if (limit < content.length) {
-          addPagination(parent, listElement, countElement, content, limit);
+          addPagination(parent, listElement, countElement, content, limit,
+            publisherTitle);
         }
 
         parent.appendChild(countElement);
